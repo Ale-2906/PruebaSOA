@@ -228,3 +228,12 @@ COMMIT;
 
 Terminal
 mvn clean install
+
+
+DependenciesAdd dependencies...Ctrl + b
+Lombok Developer Tools
+
+Thymeleaf Template Engines
+
+MySQL Driver SQL
+Spring Web Web
