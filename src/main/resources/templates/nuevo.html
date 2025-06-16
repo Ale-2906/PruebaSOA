@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymesealf.og">
+<head>
+    <meta charset="UTF-8">
+    <title>Producto</title>
+</head>
+<body>
+    <h2>Agregar Producto</h2>
+    <form method="post" action="/guardar">
+        <label>Producto</label>
+        <select name="productoId" required>
+            <option th:each="producto : ${productos}" th:value="${producto.id}" th:text="${producto.nombre}"></option>
+        </select>
+        <label>Producto</label>
+        <select name="bodegaId" required>
+            <option th:each="bodega : ${bodegas}" th:value="${bodega.id}" th:text="${bodega.nombre}"></option>
+        </select>
+        <label>Cantidad</label>
+        <input type="number" name="cantidad" min="1" required/>
+        <button type="submit">Guardar</button>
+    </form>
+<a href="/">Volver</a>
+</body>
+</html>
